@@ -1,41 +1,135 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NEXAR — Gizlilik Politikası</title>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEXAR Gizlilik Politikası</title>
 <style>
-:root{--bg:#06101f;--text:#e8f1ff;--muted:#9fb3cf;--acc:#39b6ff}
-@media (prefers-color-scheme: light){:root{--bg:#f7f9fc;--text:#111827;--muted:#4b5563;--acc:#0a6fd6}}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-main{max-width:720px;margin:0 auto;padding:32px 16px 64px}h1{font-size:28px;margin:0 0 4px}h2{font-size:18px;color:var(--acc);margin:28px 0 8px}
-.muted{color:var(--muted);font-size:14px}a{color:var(--acc)}li{margin:6px 0}
-</style></head><body><main>
-<h1>NEXAR — Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 15 Ekim 2026 · English summary below</p>
-<p>NEXAR bir kişisel asistandır. Bu sayfa hangi verilerin nereye gittiğini açıkça anlatır.</p>
-<h2>Yapay zekâya gidenler</h2>
+  :root { --bg: #ffffff; --text: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea; --accent: #d9381e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111113; --text: #f5f5f7; --muted: #a1a1a6; --line: #2c2c2e; --accent: #ff6a3d; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>NEXAR Gizlilik Politikası</h1>
+<p class="muted">Son güncelleme: 23 Ekim 2026 · <a href="#en">English below</a></p>
+
+<p>NEXAR, iPhone, Apple Watch ve isteğe bağlı olarak kendi Mac'iniz üzerinde çalışan kişisel bir sesli asistandır.
+NEXAR'ın bir sunucusu yoktur; geliştirici olarak sizin hiçbir verinizi almayız, saklamayız, satmayız.</p>
+
+<h2>Hangi veriler, nereye gider</h2>
+<p>Bir isteği cevaplamak için yalnız o istekle ilgili veri, Google'ın Gemini yapay zekâ hizmetine (Google LLC) gönderilir.
+Bunun için kendi Gemini API anahtarını girersin; kullanım senin Google hesabına aittir:</p>
 <ul>
-<li>Sesin ve yazdıkların, cevap verilebilmesi için Google Gemini'ye (Google LLC) gönderilir. Bunun için kendi Gemini API anahtarını girersin; kullanım senin Google hesabına aittir ve Google'ın koşullarına tabidir.</li>
-<li>Bir soruyu cevaplamak gerektiğinde, izin verdiğin verilerin yalnız ilgili parçası aynı yoldan gider: takvim ve anımsatıcılardaki ilgili kayıtlar, rehberdeki ilgili kişi, aradığın fotoğrafın küçük bir önizlemesi, konumundaki hava durumu sorgusu.</li>
+  <li><b>Ses:</b> NEXAR'la konuşurken sesiniz, cevap üretilmesi için gerçek zamanlı gönderilir.</li>
+  <li><b>Yazdıklarınız:</b> Yazılı sorular ve istekler.</li>
+  <li><b>Fotoğraf ve kamera görüntüsü:</b> Yalnız siz "kamerayı aç, ne görüyorsun", "kâğıdı tara" ya da "galeride bul" dediğinizde; galeri aramasında fotoğraflar önce telefonda etiketlenir, yalnız en olası adayların küçük kopyaları kontrol için gönderilir.</li>
+  <li><b>Sağlık özetleri:</b> Yalnız siz sorduğunuzda (ör. "dün kaç saat uyudum") ilgili özet. NEXAR Sağlık'a veri yazmaz; Sağlık verisi reklam ya da başka bir amaçla kullanılmaz.</li>
+  <li><b>Konum:</b> Yalnız konumla ilgili bir soru sorduğunuzda ya da konumunuzu paylaşmak istediğinizde. Konumunuzu
+  birine WhatsApp ya da SMS ile göndermeyi istediğinizde, mesaj yazılı açılır; gönderen sizsiniz.</li>
+  <li><b>Takvim, anımsatıcılar, rehber:</b> Yalnız soruyu cevaplamak için gereken kayıt (ör. yarınki etkinlik, aradığınız kişi);
+  bunlar cihazdan toplu olarak çıkmaz.</li>
 </ul>
-<h2>Cihazında kalanlar</h2>
+<p>Google bu verileri kendi <a href="https://ai.google.dev/gemini-api/terms">Gemini API koşullarına</a> göre işler.
+Hava durumu için Open-Meteo'ya yalnız konum ya da şehir adı gönderilir; adres, Apple'ın konum hizmetiyle (Mac'iniz
+bağlıysa ayrıca OpenStreetMap ile) bulunur. İnternette arama istediğinizde arama sözcükleri DuckDuckGo'ya ve haber, spor,
+kargo gibi ilgili sitelere gönderilir.</p>
+
+<h2>Kendi Mac'iniz</h2>
+<p>NEXAR'ı Mac uygulamasıyla eşleştirirseniz telefon, ev ağınız ya da Tailscale üzerinden şifreli bağlantıyla
+<b>sizin</b> Mac'inize bağlanır. Bu bağlantıdaki veriler sizin cihazlarınız arasında kalır. Bildirimler Apple'ın bildirim
+hizmeti (APNs) üzerinden sizin Mac'inizden telefonunuza gönderilir.</p>
+
+<h2>Ev (HomeKit)</h2>
+<p>Işık, priz ve termostat gibi cihazlarınızı yalnız siz istediğinizde kontrol eder; cihaz listesi cihazınızdan çıkmaz.</p>
+
+<h2>Hesap, reklam, izleme</h2>
 <ul>
-<li>Gemini anahtarın cihazın Anahtar Zinciri'nde saklanır; geliştiriciye ya da başka bir yere gönderilmez.</li>
-<li>Konuşma geçmişin ve NEXAR'ın senin hakkında hatırladıkları cihazında (ve eşleştirdiysen yalnız kendi Mac'inde) tutulur.</li>
-<li>Fotoğrafların, rehberin ve takvimin cihazdan toplu olarak çıkmaz; yalnız bir soruyu cevaplamak için gereken parça yukarıdaki gibi gönderilir.</li>
-<li><b>Apple Sağlık:</b> NEXAR, izin verirsen yalnız sorduğun özeti okur (ör. bugünkü adım sayısı, dün geceki uyku süresi, nabız ortalaması). Sağlık verisi yazılmaz, reklam ya da pazarlama için kullanılmaz, üçüncü taraflarla paylaşılmaz ve iCloud dışında hiçbir sunucuda saklanmaz; cevap verilebilmesi için yalnız bu kısa özet Google Gemini'ye gider.</li>
-<li><b>Ev (HomeKit):</b> Işık, priz ve termostat gibi cihazlarını yalnız sen istediğinde kontrol eder; cihaz listesi cihazından çıkmaz.</li>
+  <li>Hesap açmanız gerekmez; NEXAR sizi tanımlayan bir kimlik oluşturmaz.</li>
+  <li>Reklam yoktur, izleme (tracking) yapılmaz, veriler üçüncü taraflara satılmaz ya da verilmez.</li>
 </ul>
-<h2>Mac eşleştirmesi</h2>
-<p>NEXAR'ı kendi Mac'indeki NEXAR'la eşleştirirsen iPhone yalnız o Mac'e bağlanır (ev ağın ya da kendi Tailscale ağın üzerinden). Geliştiricinin bir sunucusu kullanılmaz.</p>
-<h2>Geliştirici ne toplar?</h2>
-<p>Hiçbir şey. NEXAR'da analiz, reklam ya da takip aracı yoktur; geliştirici verilerini görmez, toplamaz, satmaz.</p>
-<h2>Senin kontrolün</h2>
+
+<h2>Cihazda kalanlar ve silme</h2>
+<p>Ayarlarınız, sohbet geçmişiniz ve galeri etiketleri yalnız telefonunuzda saklanır. Uygulamayı sildiğinizde bunlar da silinir.
+API anahtarınız telefonun Anahtar Zinciri'nde tutulur.</p>
+
+<h2>Sizin kontrolünüz</h2>
 <ul>
-<li>Uygulamanın ayarlarından anahtarını silebilir, Mac eşleştirmesini kaldırabilirsin.</li>
-<li>Takvim, rehber, fotoğraf, konum, mikrofon, kamera, Sağlık ve Ev izinlerini iOS Ayarlar'ından istediğin an kapatabilirsin.</li>
-<li>Uygulamayı silmek cihazdaki tüm NEXAR verisini siler.</li>
+  <li>Uygulamanın ayarlarından API anahtarınızı silebilir, Mac eşleştirmesini kaldırabilirsiniz.</li>
+  <li>Mikrofon, kamera, fotoğraf, konum, takvim, rehber, Sağlık ve Ev izinlerini iOS Ayarlar'ından istediğiniz an kapatabilirsiniz.</li>
 </ul>
-<h2>Çocuklar</h2><p>NEXAR 13 yaşından küçükler için tasarlanmamıştır.</p>
-<h2>İletişim</h2><p><a href="mailto:eraydmrkl@gmail.com">eraydmrkl@gmail.com</a></p>
-<h2>English summary</h2>
-<p>NEXAR is a personal assistant. What you say or type is sent to Google Gemini (with your own API key) to produce answers; when needed, only the relevant piece of data you allowed (a calendar entry, a contact, a photo preview, a weather lookup) goes with it. Your key, history and memory stay on your device (and your own Mac if you pair it). The developer collects nothing: no analytics, no ads, no tracking. Contact: eraydmrkl@gmail.com</p>
-</main></body></html>
+
+<h2>Çocuklar</h2>
+<p>NEXAR 13 yaşından küçük çocuklara yönelik değildir.</p>
+
+<h2>İletişim</h2>
+<p>Sorularınız için: <a href="mailto:eraydmrkl@gmail.com">eraydmrkl@gmail.com</a></p>
+
+<hr id="en">
+
+<h1>NEXAR Privacy Policy</h1>
+<p class="muted">Last updated: 23 October 2026</p>
+
+<p>NEXAR is a personal voice assistant that runs on iPhone, Apple Watch and, optionally, your own Mac. NEXAR has no
+server of its own: the developer does not receive, store or sell any of your data.</p>
+
+<h2>What data goes where</h2>
+<p>To answer a request, only the data that request needs is sent to Google's Gemini AI service (Google LLC), with your own
+Gemini API key; the usage belongs to your Google account:</p>
+<ul>
+  <li><b>Audio:</b> your voice while you talk to NEXAR, in real time, to produce the answer.</li>
+  <li><b>Text:</b> what you type.</li>
+  <li><b>Photos and camera images:</b> only when you ask ("open the camera, what do you see", "scan this page", "find it in my gallery"). Gallery search labels photos on the phone first; only small copies of the likeliest matches are sent to be checked.</li>
+  <li><b>Health summaries:</b> only the summary you ask about (e.g. "how long did I sleep"). NEXAR never writes to Health, and Health data is never used for advertising or any other purpose.</li>
+  <li><b>Location:</b> only when you ask something about it or ask to share it. Sharing by WhatsApp or SMS opens the message
+  written; you send it.</li>
+  <li><b>Calendar, reminders, contacts:</b> only the entry needed to answer (e.g. tomorrow's event, the person you want to
+  call); they never leave the device in bulk.</li>
+</ul>
+<p>Google processes this data under its <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.
+For weather, only your location or city name goes to Open-Meteo; addresses are found with Apple's location service (and
+OpenStreetMap when your Mac is connected). When you ask NEXAR to search the web, the search words go to DuckDuckGo and to the
+relevant news, sports or parcel-tracking sites.</p>
+
+<h2>Your own Mac</h2>
+<p>If you pair NEXAR with its Mac app, the phone connects to <b>your</b> Mac over your home network or Tailscale with an
+encrypted connection; that data stays between your devices. Notifications go from your Mac to your phone through Apple's
+Push Notification service (APNs).</p>
+
+<h2>Home (HomeKit)</h2>
+<p>Lights, plugs and thermostats are controlled only when you ask; the device list never leaves your device.</p>
+
+<h2>Accounts, ads, tracking</h2>
+<ul>
+  <li>No account is needed; NEXAR creates no identifier for you.</li>
+  <li>No ads, no tracking, and no data is sold or shared with third parties.</li>
+</ul>
+
+<h2>On-device data and deletion</h2>
+<p>Your settings, conversation history and gallery labels are stored only on your phone and are deleted with the app.
+Your API key is kept in the phone's Keychain.</p>
+
+<h2>Your control</h2>
+<ul>
+  <li>Delete your API key or remove the Mac pairing in the app's settings.</li>
+  <li>Turn off microphone, camera, photos, location, calendar, contacts, Health and Home access in iOS Settings at any time.</li>
+</ul>
+
+<h2>Children</h2>
+<p>NEXAR is not directed to children under 13.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:eraydmrkl@gmail.com">eraydmrkl@gmail.com</a></p>
+
+</main>
+</body>
+</html>
